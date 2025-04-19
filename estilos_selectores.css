@@ -39,9 +39,28 @@ legend {
     font: oblique bold 120% cursive;
 }
 
-.xd { 
+.contacto_cuadrado { 
     background-color: rgb(153, 184, 196);
+    width: 60%;
+    margin: auto;
 }
+
+.contacto_cuadrado form p{
+    text-align: center;
+}
+
+.contacto_cuadrado button{  
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
 .lol {
     text-align: right; 
     border: solid 3px darkgrey; 

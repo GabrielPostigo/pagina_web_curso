@@ -3,7 +3,7 @@
 <head>
     <meta charset="UFT-8">
     <!-- titulo que aparece en la pestaña de la página -->
-    <title>Conocenos</title>
+    <title>Conocenos - Le Blanc</title>
     <!-- Vinculamos la hoja de CSS externa -->
     <link rel="stylesheet" type="text/css" href="estilos_selectores.css"> 
 
@@ -24,7 +24,7 @@
     </ul>
 
     <h1 id="titulo_contacto">Información de contacto</h1>
-    <fieldset class="xd">
+    <fieldset class="contacto_cuadrado" style="margin-bottom: 20px;">
         <p>
             <h3>Nombre</h3>
             - Nitro Glicerina Pérez<br>
@@ -36,13 +36,38 @@
         </p>
         <p>
             <h3>Email</h3>
-            - pinguinod@gmail.com<br>
+            - pingudev@gmail.com<br>
             <h3>Nacionlidad</h3>
             - Netherworld<br> 
             <h3>Fecha de Nacimiento</h3>
             - 06/06/1956<br>
         </p>
     </fieldset>
+
+    <h1 id="titulo_contacto">Contacta con nosotros</h1>
+    
+    <fieldset class="contacto_cuadrado">
+        <!-- Formulario de contacto-->
+        <form action="proceso.php" method="post"> <!-- El action no existe -->
+            <p>
+                Nombre <br> <input type="text" name="fname" size="30">
+            </p>
+            <p>
+                Correo <br> <input type="email" name="femail" size="30">
+            </p>
+            <p>
+                Mensaje <br> <textarea name="fmensaje" cols="20" rows="4" style="width: 30%;"></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- iframe que muestra un mapa-->
+        <h2>Donde encontrarnos</h2>
+        <!-- Desconozco a esta cafeteria, solo he cogido su ubicación por ser ese nombre-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65084333.32518969!2d-82.70648389999998!3d5.35077970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6e7b4244b8287%3A0x52436ed30d760edc!2sLunchcaf%C3%A9%20Le%20Blanc!5e0!3m2!1ses!2ses!4v1745083467974!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </fieldset>
+        
 </body>
 </html>
 
