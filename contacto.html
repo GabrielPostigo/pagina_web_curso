@@ -48,7 +48,7 @@
     
     <fieldset class="contacto_cuadrado">
         <!-- Formulario de contacto-->
-        <form action="proceso.php" method="post"> <!-- El action no existe -->
+        <form method="post">
             <p>
                 Nombre <br> <input type="text" name="fname" size="30">
             </p>
@@ -59,7 +59,8 @@
                 Mensaje <br> <textarea name="fmensaje" cols="20" rows="4" style="width: 30%;"></textarea>
             </p>
 
-            <button type="submit">Enviar</button>
+            <button value="Enviar" onclick="alert('¡Info recibida! Gracias por tu interes')">
+            Enviar</button>
         </form>
 
         <!-- iframe que muestra un mapa-->
